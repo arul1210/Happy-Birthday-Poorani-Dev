@@ -188,15 +188,22 @@
     }, 300);
   }
 
-  if (els.celebrateBtn) {
-    els.celebrateBtn.addEventListener('click', function () {
-      if (unlocked) {
-        openCelebration();
-      } else {
-        openLockedModal();
-      }
-    });
-  }
+ if (els.celebrateBtn) {
+  els.celebrateBtn.addEventListener('click', function () {
+    // 1. Double check the time directly on click
+    var now = Date.now();
+    var hasTimePassed = (TARGET_TIME - now) <= 0;
+    
+    // 2. Or check if the body has successfully received the 'is-unlocked' class
+    var isBodyUnlocked = document.body.classList.contains('is-unlocked');
+
+    if (hasTimePassed || isBodyUnlocked) {
+      openCelebration();
+    } else {
+      openLockedModal();
+    }
+  });
+}
 
   if (els.lockedClose) els.lockedClose.addEventListener('click', closeLockedModal);
   if (els.overlayClose) els.overlayClose.addEventListener('click', closeCelebration);
