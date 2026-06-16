@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday, Poorani 🎂</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=Work+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="is-locked">
+
+  <!-- ================= PASSWORD LOCK SCREEN ================= -->
+  <div class="lock-screen" id="lock-screen">
+    <form class="lock-card" id="lock-form" autocomplete="off">
+      <p class="eyebrow">$ ssh poorani@birthday-2026</p>
+      <h1 class="lock-title">This one's just for you.</h1>
+      <p class="lock-sub">Enter the password to continue.</p>
+      <input
+        class="lock-input"
+        id="lock-input"
+        type="password"
+        placeholder="Password"
+        aria-label="Password"
+        required
+      >
+      <button class="lock-submit" type="submit">Unlock 🔓</button>
+      <p class="lock-error" id="lock-error" hidden>Access denied — wrong password. Try again.</p>
+    </form>
+  </div>
+
+  <main class="site-main" id="site-main" aria-hidden="true">
+
+  <!-- ================= HERO : FATHER'S BIRTHDAY TRIBUTE ================= -->
+  <section class="hero" id="hero">
+    <div class="hero-inner">
+      <p class="eyebrow">// June 16 · today</p>
+      <h1 class="hero-title">Today, we light a candle<br>for Appa.</h1>
+      <p class="hero-sub">
+        Before the celebration begins, we pause — for the man who gave Poorani
+        her laugh, her stubbornness, and her refusal to ever leave a hard
+        problem unsolved.
+      </p>
+      <a href="#remembrance" class="scroll-cue" aria-label="Scroll down">↓</a>
+    </div>
+  </section>
+
+  <!-- ================= REMEMBRANCE ================= -->
+  <section class="remembrance" id="remembrance">
+    <div class="section-inner">
+      <p class="eyebrow eyebrow--dark">// remembering him</p>
+      <p class="remembrance-lede">
+        Some people count birthdays in candles. We count this one in
+        everything he left behind — and so much of it is standing right
+        here, still working through hard days, still smiling the way he
+        taught her to.
+      </p>
+
+      <p class="reveal-hint">Tap an emoji to reveal what it's hiding 👇</p>
+      <div class="quote-grid">
+        <button class="quote-card" type="button" aria-expanded="false">
+          <span class="card-face card-face--emoji" aria-hidden="true">🫂</span>
+          <span class="card-face card-face--text">
+            Being an only child never meant being alone — it meant being
+            loved without ever needing to share it.
+          </span>
+        </button>
+        <button class="quote-card" type="button" aria-expanded="false">
+          <span class="card-face card-face--emoji" aria-hidden="true">👨‍👧</span>
+          <span class="card-face card-face--text">
+            His biggest project was never code. It was you. And it shipped
+            without a single bug.
+          </span>
+        </button>
+        <button class="quote-card" type="button" aria-expanded="false">
+          <span class="card-face card-face--emoji" aria-hidden="true">🕊️</span>
+          <span class="card-face card-face--text">
+            He may not be here to say it out loud, but somewhere, he's
+            still saying — <em>"that's my girl."</em>
+          </span>
+        </button>
+        <button class="quote-card" type="button" aria-expanded="false">
+          <span class="card-face card-face--emoji" aria-hidden="true">🤍</span>
+          <span class="card-face card-face--text">
+            You don't have to choose between missing him and celebrating
+            you. Today, you're allowed to do both, gently.
+          </span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= COUNTDOWN / "DEPLOY" METAPHOR ================= -->
+  <section class="countdown" id="countdown">
+    <div class="section-inner">
+      <p class="eyebrow">$ ./celebrate-poorani.sh</p>
+      <p class="build-status" id="build-status">Build status: pending — waiting for June 17, 12:00 AM</p>
+
+      <div class="countdown-grid" role="timer" aria-live="polite" aria-atomic="true">
+        <div class="countdown-unit">
+          <span class="countdown-number" id="cd-days">00</span>
+          <span class="countdown-label">days</span>
+        </div>
+        <div class="countdown-unit">
+          <span class="countdown-number" id="cd-hours">00</span>
+          <span class="countdown-label">hours</span>
+        </div>
+        <div class="countdown-unit">
+          <span class="countdown-number" id="cd-mins">00</span>
+          <span class="countdown-label">min</span>
+        </div>
+        <div class="countdown-unit">
+          <span class="countdown-number" id="cd-secs">00</span>
+          <span class="countdown-label">sec</span>
+        </div>
+      </div>
+
+      <p class="countdown-caption">Some celebrations can't be rushed. This one's compiling with love.</p>
+    </div>
+  </section>
+
+  <!-- ================= DEVELOPER JOKES ABOUT HER ================= -->
+  <section class="devjokes" id="devjokes">
+    <div class="section-inner">
+      <p class="eyebrow eyebrow--dark">// known issues: none found</p>
+      <h2 class="section-title">A few things only a developer would understand</h2>
+
+      <p class="reveal-hint">Tap an emoji to reveal what it's hiding 👇</p>
+      <div class="joke-grid">
+        <button class="joke-card" type="button" aria-expanded="false">
+          <span class="card-face card-face--emoji" aria-hidden="true">☕</span>
+          <span class="card-face card-face--text joke-comment">// She turns coffee into commits and Mondays into deploy days.</span>
+        </button>
+        <button class="joke-card" type="button" aria-expanded="false">
+          <span class="card-face card-face--emoji" aria-hidden="true">🔎</span>
+          <span class="card-face card-face--text joke-comment">// 404: bad birthday not found. She wouldn't allow it.</span>
+        </button>
+        <button class="joke-card" type="button" aria-expanded="false">
+          <span class="card-face card-face--emoji" aria-hidden="true">🐛</span>
+          <span class="card-face card-face--text joke-comment">// Her code has fewer bugs than most people's excuses for being late.</span>
+        </button>
+        <button class="joke-card" type="button" aria-expanded="false">
+          <span class="card-face card-face--emoji" aria-hidden="true">✅</span>
+          <span class="card-face card-face--text joke-comment">// If kindness were a function, she'd have called it a thousand times today — zero errors.</span>
+        </button>
+        <button class="joke-card" type="button" aria-expanded="false">
+          <span class="card-face card-face--emoji" aria-hidden="true">🧠</span>
+          <span class="card-face card-face--text joke-comment">// Some people need version control. She just remembers everything anyway.</span>
+        </button>
+        <button class="joke-card" type="button" aria-expanded="false">
+          <span class="card-face card-face--emoji" aria-hidden="true">🔀</span>
+          <span class="card-face card-face--text joke-comment">// Proof that you can have zero merge conflicts — in your code AND your life.</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CELEBRATE NOW ================= -->
+  <section class="celebrate-section" id="celebrate-section">
+    <div class="section-inner section-inner--center">
+      <p class="eyebrow">$ run celebration</p>
+      <h2 class="celebrate-title">Ready when you are.</h2>
+      <button class="celebrate-btn" id="celebrate-btn">🎉 Celebrate Now</button>
+      <p class="celebrate-hint">It unlocks the moment June 17th begins.</p>
+    </div>
+  </section>
+
+  </main>
+
+  <!-- ================= LOCKED MODAL ================= -->
+  <div class="locked-modal" id="locked-modal" hidden role="dialog" aria-modal="true" aria-labelledby="locked-title">
+    <div class="locked-card">
+      <p class="locked-emoji">🕛</p>
+      <h3 class="locked-title" id="locked-title">Hold on — even her happiness has a release schedule.</h3>
+      <p class="locked-text">Come back at midnight. Time remaining:</p>
+      <p class="locked-countdown" id="locked-countdown">--</p>
+      <button class="locked-close" id="locked-close">Okay, I'll wait</button>
+    </div>
+  </div>
+
+  <!-- ================= CELEBRATION OVERLAY (unlocks after midnight) ================= -->
+  <div class="celebration-overlay" id="celebration-overlay" hidden>
+    <div class="confetti-container" id="confetti-container" aria-hidden="true"></div>
+    <button class="overlay-close" id="overlay-close" aria-label="Close">✕</button>
+    <div class="overlay-content">
+      <div class="photo-frame">
+        <img class="celebrate-photo" id="celebrate-photo" src="assets/celebrate.jpg"
+             alt="A favorite photo of Poorani"
+             onerror="this.style.display='none'">
+      </div>
+      <p class="eyebrow eyebrow--light">// build succeeded</p>
+      <h2 class="overlay-title">Happy Birthday, Poorani 🎂</h2>
+      <p class="overlay-text">
+        Yesterday we remembered the man who shaped you. Today, the world
+        gets to celebrate what he shaped — you. Every line of code you
+        write, every problem you refuse to give up on, every laugh you
+        share without meaning to — that's him, still living in you.
+      </p>
+      <p class="overlay-text">
+        He's not here to light your candles. But you carry his light
+        anyway.
+      </p>
+      <p class="overlay-signoff">Happy birthday. We love you more than you know. 💛</p>
+      <p class="overlay-song-note">🎵 playing a song for you</p>
+    </div>
+  </div>
+
+  <audio id="bday-song" src="assets/song.mp3" preload="none"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
