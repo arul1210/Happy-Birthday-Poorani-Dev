@@ -65,6 +65,7 @@ a, button { font-family: inherit; }
 }
 
 /* ============ HERO ============ */
+/* ============ HERO ============ */
 .hero {
   min-height: 100vh;
   display: flex;
@@ -72,16 +73,20 @@ a, button { font-family: inherit; }
   justify-content: center;
   text-align: center;
   position: relative;
-  background-color: var(--ink-deep); /* Fallback */
+  background-color: var(--ink-deep); 
   background:
     linear-gradient(180deg, rgba(28,16,32,0.55) 0%, rgba(28,16,32,0.85) 70%, var(--ink) 100%),
     url('assets/background.jpeg');
-  /* Zoom out to 50% and focus on the top (face area) */
-  background-size: 50%;
-  background-position: center top;
+  
+  /* Zoom out slightly from 'cover' while keeping it bounded safely */
+  background-size: 85vh; 
+  
+  /* First value controls horizontal position (50% = perfectly centered) */
+  /* Second value shifts it down or up to bring the faces into frame (try between 10% and 30%) */
+  background-position: center 20%;
+  
   background-repeat: no-repeat;
 }
-
 .hero-inner {
   max-width: 640px;
   padding: 2rem 1.5rem;
@@ -125,13 +130,15 @@ a, button { font-family: inherit; }
   align-items: center;
   justify-content: center;
   padding: 1.5rem;
-  background-color: var(--ink-deep); /* Fallback */
+  background-color: var(--ink-deep); 
   background:
     linear-gradient(180deg, rgba(28,16,32,0.7) 0%, rgba(28,16,32,0.92) 100%),
     url('assets/background.jpeg');
-  /* Zoom out to 50% and focus on the top (face area) */
-  background-size: 50%;
-  background-position: center top;
+  
+  /* Keep background size settings perfectly mirrored here */
+  background-size: 85vh;
+  background-position: center 20%;
+  
   background-repeat: no-repeat;
   transition: opacity 0.4s ease;
 }
