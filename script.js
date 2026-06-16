@@ -65,8 +65,8 @@
     });
   }
 
-  // ---- Target unlock moment: June 17, 2026, 12:00 AM IST ----
-  var TARGET_TIME = new Date('2026-06-17T00:00:00+05:30').getTime();
+  // ---- Target unlock moment: Set for test: June 16, 2026, 8:00 PM IST ----
+  var TARGET_TIME = new Date('2026-06-16T20:00:00+05:30').getTime();
   var unlocked = false;
 
   var els = {
@@ -202,11 +202,17 @@
   if (els.overlayClose) els.overlayClose.addEventListener('click', closeCelebration);
 
   // ---- Emoji-reveal quote & joke cards ----
+  // Find all cards
   var revealCards = document.querySelectorAll('.quote-card, .joke-card');
-  for (var i = 0; i < revealCards.length; i++) {
-    revealCards[i].addEventListener('click', function () {
+  
+  // Add click listener to each card
+  revealCards.forEach(function(card) {
+    card.addEventListener('click', function () {
+      // Toggle the reveal class
       var isRevealed = this.classList.toggle('is-revealed');
+      // Update aria-expanded for accessibility
       this.setAttribute('aria-expanded', isRevealed ? 'true' : 'false');
     });
-  }
+  });
+
 })();
